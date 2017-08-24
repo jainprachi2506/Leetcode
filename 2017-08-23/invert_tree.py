@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/invert-binary-tree/description/
+# https://leetcode.com/problems/invert-binary-tree/description/ 
 class Solution(object):
     def invertTree(self, root):
         """
