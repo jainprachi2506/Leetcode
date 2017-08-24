@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        track = []
+        track = ()
         found = False
         if root is None:
             return found
@@ -22,7 +22,7 @@ class Solution(object):
         while stack:
             popped = stack.pop()
             if popped.val not in track:
-                track.append(k-popped.val)
+                track.add(k-popped.val)
             else:
                 found = True
             if popped.left:
